@@ -1,5 +1,8 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { IntroBio } from "../components/IntroBio";
+
+import styles from "./Home.module.scss";
 
 export default function Home() {
   return (
@@ -7,7 +10,10 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <Header />
+      <section className={styles.introSection}>
+        <Header />
+        <IntroBio />
+      </section>
     </>
   )
 }

@@ -1,0 +1,35 @@
+.introBio {
+   width: 506px;
+   height: 296px;
+   margin: 0 auto;
+
+   display: flex;
+   flex-direction: column;
+
+   .bioComplimment {
+      color: #21243D;
+      font-size: 44px;
+      line-height: 60px;
+      font-weight: 700;
+      margin-bottom: 40px;
+   }
+
+   .bioDescription {
+      color: #21243D;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 46px;
+   }
+
+   .bioButton {
+      width: 208px;
+      height: 48px;
+      color: #FFFFFF;
+      background-color: #FF6464;
+
+      font-size: 20px;
+      line-height: 29px;
+      font-weight: 500;
+      border-radius: 5px;
+   }
+}
