@@ -1,0 +1,23 @@
+.headerNav {
+   margin-top: 27px;
+   margin-left: 60px;
+   list-style: none;
+
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+
+.headerItem {
+   font-size: 20px;
+   line-height: 29px;
+   font-weight: 500;
+   transition: transform 0.2s;
+
+   cursor: pointer;
+
+   &:hover {
+      transform: scale(1.1);
+      font-weight: 700;
+   }
+}
