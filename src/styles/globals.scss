@@ -1,7 +1,8 @@
 :root {
   --white: #FFFFFF;
   --red: #FF6464;
-  --ligh-blue: #00A8CC;
+  --whiteish-blue:#EDF7FA;
+  --light-blue: #00A8CC;
   --dark-blue: #21243D;
   --gray: #8695A4;
 }
@@ -10,10 +11,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 @media (max-width: 1080px) {
