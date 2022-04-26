@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { IntroBio } from "../components/IntroBio";
 import { PostSection } from "../components/PostSection";
+import { WorkSection } from "../components/WorkSection";
 
 import styles from "./Home.module.scss";
 
@@ -16,6 +17,7 @@ export default function Home() {
         <IntroBio />
       </section>
       <PostSection />
+      <WorkSection />
     </>
   )
 }
