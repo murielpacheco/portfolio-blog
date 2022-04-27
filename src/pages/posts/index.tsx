@@ -1,7 +1,23 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
-import styles from "./styles.module.scss";
+import { RichText } from "prismic-dom"
 
-export default function Posts() {
+import styles from "./styles.module.scss";
+import {createClient } from "../../services/prismic";
+
+type Post = {
+   slug: string;
+   title: string;
+   excerpt: string;
+   updatedAt: string;
+}
+
+interface PostsProps {
+   posts: Post[];
+}
+
+export default function Posts({ posts }: PostsProps) {
+   console.log(posts)
    return (
       <>
          <Head>
@@ -9,36 +25,47 @@ export default function Posts() {
          </Head>
          <main className={styles.postsContainer}>
             <div className={styles.postsList}>
-               <a href="">
-                  <strong>UI Interactions of the week</strong>
-                  <div className={styles.postsInfos}>
-                     <time>12 Feb 2019</time>
-                     |
-                     <span> React JS and Modals</span>
-                  </div>
-                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-               </a>     
-               <a href="">
-                  <strong>UI Interactions of the week</strong>
-                  <div className={styles.postsInfos}>
-                     <time>12 Feb 2019</time>
-                     |
-                     <span> React JS and Modals</span>
-                  </div>
-                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-               </a>     
-               <a href="">
-                  <strong>UI Interactions of the week</strong>
-                  <div className={styles.postsInfos}>
-                     <time>12 Feb 2019</time>
-                     |
-                     <span> React JS and Modals</span>
-                  </div>
-                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-               </a>     
+               {posts.map(post => (
+                  <>
+                     <a href="">
+                        <strong>{post.title}</strong>
+                        <div className={styles.postsInfos}>
+                           <time>{post.updatedAt}</time>
+                           |
+                           <span>Basketball</span>
+                        </div>
+                        <p>{post.excerpt}</p>
+                     </a>  
+                  </>
+               ))}   
             </div>
          
          </main>
       </>
    )
+}
+
+export const getStaticProps: GetStaticProps = async ({ previewData }) => {
+   const client = createClient({ previewData })
+
+   const response = await client.getAllByType('post')
+
+   const posts = response?.map((post: any) => {
+       return {
+           slug: post.uid,
+           title: RichText.asText(post.data.title),
+           excerpt: post.data.content.find(content => content.type == 'paragraph')?.text ?? '',
+           updatedAt: new Date(post.last_publication_date).toLocaleDateString('pt-BR', {
+              day: '2-digit',
+              month: 'short',
+              year: 'numeric',
+           })
+       }
+   });
+
+
+   return {
+      props: { posts }, // Will be passed to the page component as props
+      revalidate: 60 * 60, // 1 hour
+   }
 }
