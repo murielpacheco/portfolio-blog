@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Header } from "../components/Header";
 import { IntroBio } from "../components/IntroBio";
 import { PostSection } from "../components/PostSection";
 import { WorkSection } from "../components/WorkSection";
@@ -13,7 +12,6 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <section className={styles.introSection}>
-        <Header />
         <IntroBio />
       </section>
       <PostSection />
