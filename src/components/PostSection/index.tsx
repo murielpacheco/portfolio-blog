@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export function PostSection() {
@@ -6,7 +7,7 @@ export function PostSection() {
          <div className={styles.postWrapper}>
             <header className={styles.postHeader}>
                <h3>Recent Posts</h3>
-               <a href="google.com">View all</a>
+               <Link href="/posts" passHref>View all</Link>
             </header>
             <div className={styles.postContainer}>
                <div className={styles.postItem}>
