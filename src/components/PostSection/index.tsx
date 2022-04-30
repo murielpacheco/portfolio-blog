@@ -18,7 +18,6 @@ interface PostsProps {
 }
 
 export function PostSection({ postsItem }: PostsProps) {
-   console.log(postsItem);
    return (
       <section className={styles.postSection}>
          <div className={styles.postWrapper}>

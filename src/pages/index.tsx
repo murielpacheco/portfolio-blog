@@ -1,12 +1,12 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { RichText } from "prismic-dom";
+
+import styles from "./Home.module.scss";
 import { IntroBio } from "../components/IntroBio";
 import { PostSection } from "../components/PostSection";
 import { WorkSection } from "../components/WorkSection";
 import { createClient } from "../services/prismic";
-
-import styles from "./Home.module.scss";
 
 export default function Home({postsItem}) {
   return (
@@ -23,7 +23,7 @@ export default function Home({postsItem}) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ previewData }) => {
+export const getStaticProps: GetStaticProps = async ({ previewData }) => { // only works on Next Pages
   const client = createClient({ previewData })
 
   const response = await client.getAllByType('post')

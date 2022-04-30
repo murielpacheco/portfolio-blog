@@ -4,6 +4,7 @@ import { RichText } from "prismic-dom"
 
 import styles from "./styles.module.scss";
 import { createClient } from "../../services/prismic";
+import Link from "next/link";
 
 type Post = {
    slug: string;
@@ -17,7 +18,6 @@ interface PostsProps {
 }
 
 export default function Posts({ posts }: PostsProps) {
-   console.log(posts)
    return (
       <>
          <Head>
@@ -26,8 +26,8 @@ export default function Posts({ posts }: PostsProps) {
          <main className={styles.postsContainer}>
             <div className={styles.postsList}>
                {posts.map(post => (
-                  <>
-                     <a href="">
+                  <Link key={post.slug} href={`/posts/${post.slug}`}>
+                     <a>
                         <strong>{post.title}</strong>
                         <div className={styles.postsInfos}>
                            <time>{post.updatedAt}</time>
@@ -36,7 +36,7 @@ export default function Posts({ posts }: PostsProps) {
                         </div>
                         <p>{post.excerpt}</p>
                      </a>  
-                  </>
+                  </Link>
                ))}   
             </div>
          
