@@ -3,7 +3,7 @@ import Head from "next/head";
 import { RichText } from "prismic-dom"
 
 import styles from "./styles.module.scss";
-import {createClient } from "../../services/prismic";
+import { createClient } from "../../services/prismic";
 
 type Post = {
    slug: string;

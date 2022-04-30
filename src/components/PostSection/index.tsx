@@ -1,7 +1,24 @@
+import { GetStaticProps } from "next";
 import Link from "next/link";
-import styles from "./styles.module.scss";
+import { RichText } from "prismic-dom"
 
-export function PostSection() {
+import styles from "./styles.module.scss";
+import { createClient } from "../../services/prismic";
+import { PostItem } from "../PostItem";
+
+type PostItem = {
+   slug: string;
+   title: string;
+   excerpt: string;
+   updatedAt: string;
+}
+
+interface PostsProps {
+   postsItem: PostItem[];
+}
+
+export function PostSection({ postsItem }: PostsProps) {
+   console.log(postsItem);
    return (
       <section className={styles.postSection}>
          <div className={styles.postWrapper}>
@@ -10,24 +27,14 @@ export function PostSection() {
                <Link href="/posts" passHref>View all</Link>
             </header>
             <div className={styles.postContainer}>
-               <div className={styles.postItem}>
-                  <strong>Making a design system from scratch</strong>
-                  <div className={styles.postInfos}>
-                     <span> 12 Feb 2020</span>
-                     |
-                     <p>Design Patter</p>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
-               </div>
-               <div className={styles.postItem}>
-                  <strong>Making a design system from scratch</strong>
-                  <div className={styles.postInfos}>
-                     <span> 12 Feb 2020</span>
-                     |
-                     <p>Design Patter</p>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
-               </div>
+               {postsItem?.map(post => (
+                  <PostItem
+                     key={post.slug}
+                     title={post.title}
+                     release_year={post.updatedAt}
+                     subject={'Design Pattern'}
+                     excerpt={post.excerpt} />       
+               )).slice(0,2)}
             </div>
          </div>
       </section>
