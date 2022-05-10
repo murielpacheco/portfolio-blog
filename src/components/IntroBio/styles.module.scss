@@ -26,10 +26,17 @@
       height: 68px;
       color: var(--white);
       background-color: var(--red);
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
       font-size: 20px;
       line-height: 29px;
       font-weight: 500;
       border-radius: 5px;
+
+      &:hover {
+         filter: brightness(1.1)
+      }
    }
 }

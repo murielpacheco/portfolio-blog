@@ -1,13 +1,14 @@
+import Image from "next/image";
 import styles from "./styles.module.scss";
 
 export function IntroBio() {
    return (
       <div className={styles.introBio}>
-         <strong className={styles.bioComplimment}>Hi, I am Muriel, <br /> Web Developer</strong>
-         <span className={styles.bioDescription}>1 year of experience with tecnologies as such: HTML, CSS, JavaScript, TypeScript,
-            React, Node.js, Express and Git.
+         <strong className={styles.bioComplimment}>Muriel Pacheco <br /> Web Developer</strong>
+         <span className={styles.bioDescription}>1 ano de experiência com tecnologias como: HTML, CSS, JavaScript, TypeScript,
+            React, Next.js, Node.js, Express and Git.
          </span>
-         <button className={styles.bioButton}>Download Resume</button>
+         <a href="/curriculum.pdf" download className={styles.bioButton}>Download Resume</a>
       </div>
    )
 }
