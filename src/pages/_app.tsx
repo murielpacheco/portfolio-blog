@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import { Header } from '../components/Header'
 import '../styles/globals.scss'
+import { Footer } from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,8 +23,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       >
         
         <PrismicPreview repositoryName={repositoryName}>
-          <Header/>
+          <Header />
           <Component {...pageProps} />
+          <Footer />
         </PrismicPreview>
       </PrismicProvider>
     </>

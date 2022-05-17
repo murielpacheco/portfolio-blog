@@ -5,6 +5,7 @@ import { RichText } from "prismic-dom"
 import styles from "./styles.module.scss";
 import { createClient } from "../../services/prismic";
 import { PostItem } from "../PostItem";
+import { ReactNode } from "react";
 
 type PostItem = {
    slug: string;

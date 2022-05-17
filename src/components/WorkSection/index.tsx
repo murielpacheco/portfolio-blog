@@ -19,6 +19,7 @@ export function WorkSection() {
             ))}
 
          </div>
+         <div className={styles.workSeparator}></div>
       </section>
    )
 

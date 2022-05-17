@@ -21,14 +21,9 @@
   },
   "devDependencies": {
     "@prismicio/types": "^0.1.27",
-    "@testing-library/dom": "^8.13.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
     "@types/node": "^17.0.26",
     "@types/prismic-dom": "^2.1.1",
-    "babel-jest": "^28.1.0",
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5",
-    "jest": "^28.1.0"
+    "eslint-config-next": "12.1.5"
   }
 }
