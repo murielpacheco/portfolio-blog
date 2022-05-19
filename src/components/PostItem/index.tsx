@@ -9,7 +9,7 @@ interface PostItemProps {
 
 export function PostItem({ title, release_year, subject, excerpt }: PostItemProps) {
    return (
-      <div className={styles.postItem}>
+      <aside className={styles.postItem}>
          <strong>{title}</strong>
          <div className={styles.postInfos}>
             <span>{release_year}</span>
@@ -17,6 +17,6 @@ export function PostItem({ title, release_year, subject, excerpt }: PostItemProp
             <p>{subject}</p>
          </div>
          <p>{excerpt}</p>
-      </div>
+      </aside>
    )
 }

@@ -10,7 +10,7 @@
       align-items: center;
       gap: 35px;
 
-      li {
+      a {
          cursor: pointer;
          transition: transform .3s;
 
@@ -18,5 +18,12 @@
            transform: scale(1.1);
          }
       }
+   }
+
+   span {
+      display: block;
+      margin: 8px auto;
+      width: 856px;
+      text-align: center;
    }
 }
