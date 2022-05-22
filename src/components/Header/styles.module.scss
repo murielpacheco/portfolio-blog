@@ -1,22 +1,26 @@
 .headerNav {
    margin: 22px 0  22px 60px;
-   list-style: none;
-
+   padding-bottom: 8px;
+   
    display: flex;
    flex-direction: row;
    gap: 30px;
 
+   list-style: none;
+   border-bottom: 1px solid #3b3b3b7c;
+
    li {
+      color: white;
+      cursor: pointer;
       font-size: 20px;
-      line-height: 29px;
       font-weight: 500;
+      line-height: 29px;
       transition: transform 0.2s;
    
-      cursor: pointer;
    
       &:hover {
          transform: scale(1.1);
-         color: var(--red);
+         color: #5C62EC;
       }
    }
 }

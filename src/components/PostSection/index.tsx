@@ -24,7 +24,7 @@ export function PostSection({ postsItem }: PostsProps) {
          <div className={styles.postWrapper}>
             <header className={styles.postHeader}>
                <h3>Recent Posts</h3>
-               <Link href="/posts" passHref>View all</Link>
+               <Link href="/posts" passHref><a>View all</a></Link>
             </header>
             <div className={styles.postContainer}>
                {postsItem?.map(post => (

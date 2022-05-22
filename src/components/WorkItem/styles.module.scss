@@ -20,7 +20,7 @@
    margin-bottom: 6px;
 
    h2 {
-      color: var(--dark-blue);
+      color: white;
       font-size: 30px;
       line-height: 44px;
       cursor: pointer;
@@ -32,11 +32,11 @@
       gap: 36px;
 
       .workReleaseYear {
-         color: var(--white);
+         color: white;
          font-size: 18px;
          line-height: 60px;
          font-weight: 900;
-         background-color: #142850;
+         background-color: #5C62EC;
          width: 62px;
          height: 25px;
          border-radius: 16px;
@@ -55,7 +55,7 @@
    }
 
    .workDescription {
-      color: var(--dark-blue);
+      color: white;
       font-size: 16px;
       line-height: 24px;
    }

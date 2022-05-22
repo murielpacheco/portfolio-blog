@@ -12,7 +12,7 @@ export default function Home({postsItem}) {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Portfolio - Home</title>
       </Head>
       <section className={styles.introSection}>
         <IntroBio />

@@ -1,9 +1,9 @@
 .postItem {
    width: 418px;
    height: 295px;
-   background-color: var(--white);
+   background-color: #1C1E22;
    border-radius: 8px;
-   box-shadow: 3px 3px 4px rgb(228, 242, 244);
+   box-shadow: 3px 3px 4px rgb(29, 30, 31);
    padding: 24px 22px;
    cursor: pointer;
    transition: transform .3s;
@@ -15,7 +15,7 @@
    }
    
    strong {
-      color: var(--dark-blue);
+      color: white;
       font-size: 26px;
       line-height: 38px;
       display: inline-block;
@@ -23,7 +23,7 @@
    }
 
    .postInfos {
-      color: var(--dark-blue);
+      color: white;
       display: flex;
       align-items: center;
       gap: 24px;
@@ -33,7 +33,7 @@
          color: var(--white);
          font-size: 18px;
          font-weight: 900;
-         background-color: #142850;
+         background-color: #5C62EC;
          padding: 0 16px;
          border-radius: 16px;
          margin-top: 2px;
@@ -45,8 +45,21 @@
    }
 
    p {
-      color: var(--dark-blue);
+      color: white;
       font-size: 16px;
       line-height: 24px;
+   }
+
+   &::-webkit-scrollbar {
+      width: 8px;
+   }
+
+   &::-webkit-scrollbar-track {
+      background-color: #1C1E22;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: #303030;      
+      border-radius: 10px;
    }
 }

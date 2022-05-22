@@ -12,16 +12,18 @@
 
       a {
          cursor: pointer;
-         transition: transform .3s;
+         transition: transform .2s;
 
          &:hover {
            transform: scale(1.1);
+           filter: brightness(3);
          }
       }
    }
 
    span {
       display: block;
+      color: white;
       margin: 8px auto;
       width: 856px;
       text-align: center;

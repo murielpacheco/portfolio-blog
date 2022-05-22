@@ -1,7 +1,7 @@
 :root {
   --white: #FFFFFF;
   --red: #FF6464;
-  --whiteish-blue:#EDF7FA;
+  --whiteish-blue:#6C6A71;
   --light-blue: #00A8CC;
   --dark-blue: #21243D;
   --gray-50: #E0E0E0;
@@ -28,6 +28,7 @@
 
 body {
   padding-bottom: 2rem;
+  background-color: #171716;
 }
 
 body, input, textarea, select, button {
