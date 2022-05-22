@@ -1,6 +1,6 @@
 .postContainer {
    max-width: 1280px;
-   margin: 0 auto;
+   margin: 0 auto 64px;
    padding: 0 32px;
 }
 
@@ -11,7 +11,7 @@
    .postTitle {
       font-size: 46px;
       font-weight: 900;
-      color: var(--dark-blue);
+      color: white;
    }
 
    time {
@@ -25,7 +25,7 @@
       margin-top: 32px;
       line-height: 32px;
       font-size: 18px;
-      color: var(--dark-blue);
+      color: white;
 
       p {
          & + p {
