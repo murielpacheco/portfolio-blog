@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 export function Header() {
    return (
       <header className={styles.header}>
-         <ul className={styles.headerNav}>
+         <ul className={`${styles.headerNav} hamburguer`}>
             <Link href="/" passHref>
                <li>Home</li>
             </Link>

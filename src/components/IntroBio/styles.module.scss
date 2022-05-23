@@ -1,3 +1,8 @@
+.introBioSection {
+   padding-top: 64px;
+   width: 100%;
+}
+
 .introBio {
    width: 506px;
    height: 296px;
@@ -20,23 +25,12 @@
       line-height: 24px;
       margin-bottom: 46px;
    }
+}
 
-   .bioButton {
-      width: 228px;
-      height: 68px;
-      color: var(--white);
-      background-color: #5C62EC;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      font-size: 20px;
-      line-height: 29px;
-      font-weight: 500;
-      border-radius: 5px;
+.buttonWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
 
-      &:hover {
-         filter: brightness(1.1)
-      }
-   }
+   gap: 32px;
 }

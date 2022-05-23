@@ -1,0 +1,19 @@
+.bioButton {
+   width: 162px;
+   height: 42px;
+   color: var(--white);
+   background-color: #5C62EC;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   font-size: 18px;
+   line-height: 22px;
+   font-weight: 500;
+   border-radius: 5px;
+
+   &:hover {
+      filter: brightness(1.1)
+   }
+}
