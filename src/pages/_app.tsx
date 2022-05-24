@@ -4,7 +4,6 @@ import { PrismicProvider } from '@prismicio/react';
 import { linkResolver, repositoryName } from '../services/prismic';
 import Link from 'next/link';
 
-import { Header } from '../components/Header'
 import '../styles/globals.scss'
 import { Footer } from '../components/Footer';
 
@@ -23,7 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       >
         
         <PrismicPreview repositoryName={repositoryName}>
-          {/* <Header /> */}
           <Component {...pageProps} />
           <Footer />
         </PrismicPreview>

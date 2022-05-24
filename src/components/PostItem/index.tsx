@@ -5,11 +5,12 @@ interface PostItemProps {
    release_year: string;
    subject: string;
    excerpt: string;
+   slug: string;
 }
 
-export function PostItem({ title, release_year, subject, excerpt }: PostItemProps) {
+export function PostItem({ title, release_year, subject, excerpt, slug }: PostItemProps) {
    return (
-      <aside className={styles.postItem}>
+      <a href={`/posts/${slug}`}className={styles.postItem}>
          <strong>{title}</strong>
          <div className={styles.postInfos}>
             <span>{release_year}</span>
@@ -17,6 +18,6 @@ export function PostItem({ title, release_year, subject, excerpt }: PostItemProp
             <p>{subject}</p>
          </div>
          <p>{excerpt}</p>
-      </aside>
+      </a>
    )
 }

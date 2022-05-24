@@ -34,6 +34,7 @@ export function PostSection({ postsItem }: PostsProps) {
                      release_year={post.updatedAt}
                      subject={'Design Pattern'}
                      excerpt={post.excerpt}
+                     slug={post.slug}
                   />       
                )).slice(0,2)}
             </div>
