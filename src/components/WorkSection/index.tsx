@@ -7,7 +7,7 @@ export function WorkSection() {
    return (
       <section className={styles.workSection}>
          <div className={styles.workWrapper}>
-            <span>Feature Works</span>
+            <a href="/projects" className={styles.workAllProjects}>Feature Works</a>
             {projects?.map(project => (
                <WorkItem key={project.title}
                image={project.image}

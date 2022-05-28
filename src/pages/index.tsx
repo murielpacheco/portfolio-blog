@@ -7,6 +7,7 @@ import { IntroBio } from "../components/IntroBio";
 import { PostSection } from "../components/PostSection";
 import { WorkSection } from "../components/WorkSection";
 import { createClient } from "../services/prismic";
+import { Footer } from "../components/Footer";
 
 export default function Home({postsItem}) {
   return (
@@ -19,6 +20,7 @@ export default function Home({postsItem}) {
       </section>
       <PostSection postsItem={postsItem} />
       <WorkSection />
+      <Footer />
     </>
   )
 }

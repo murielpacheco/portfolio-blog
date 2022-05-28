@@ -11,12 +11,13 @@
       height: 766px;
       margin-top: 24px;
    
-      span {
+      .workAllProjects {
          color: white;
          font-size: 22px;
          line-height: 60px;
-         display: inline-block;
+         display: block;
          margin-bottom: 6px;
+         cursor: pointer;
       }
    }
 

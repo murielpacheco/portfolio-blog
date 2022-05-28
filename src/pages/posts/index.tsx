@@ -5,6 +5,7 @@ import { RichText } from "prismic-dom"
 import styles from "./styles.module.scss";
 import { createClient } from "../../services/prismic";
 import Link from "next/link";
+import { Footer } from "../../components/Footer";
 
 type Post = {
    slug: string;
@@ -39,8 +40,8 @@ export default function Posts({ posts }: PostsProps) {
                   </Link>
                ))}   
             </div>
-         
          </main>
+         <Footer />
       </>
    )
 }
