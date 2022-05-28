@@ -15,8 +15,9 @@ export function WorkSection() {
                description={project.description}
                releaseYear={project.release_year}
                subject={project.subject}
+               link={project.link}
                />
-            ))}
+            )).slice(0, 3)}
 
          </div>
          <div className={styles.workSeparator}></div>

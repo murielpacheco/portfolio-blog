@@ -1,23 +1,34 @@
 [
    {
-      "title": "Designing Dashboards",
-      "description": "Designing Dashboards, lorem ipsum e os caralho",
+      "title": "Portfolio - Blog",
+      "description": "Website made with Next.js, Typescript and SASS",
       "release_year": "2022",
-      "subject": "Design",
-      "image": "https://picsum.photos/200/300"
+      "subject": "Frontend",
+      "image": "https://picsum.photos/200/300",
+      "link": "https://muriel-damazio.vercel.app/"
    },
    {
-      "title": "Vibrant Portraits of 2020",
-      "description": "Designing Dashboards, lorem ipsum e os caralho22222",
-      "release_year": "2020",
-      "subject": "Colours",
-      "image": "https://picsum.photos/200/300"
+      "title": "Rentx API",
+      "description": "Rentx API made with Node.js, Typescript, Express.js and PostgreSQL",
+      "release_year": "2022",
+      "subject": "Backend",
+      "image": "https://picsum.photos/200/300",
+      "link": "https://github.com/murielpacheco/rentx-app-api"
    },
    {
-      "title": "36 Days of Malayalam type",
-      "description": "Designing Dashboards, lorem ipsum e os caralho33333",
-      "release_year": "2019",
-      "subject": "History",
-      "image": "https://picsum.photos/200/300"
+      "title": "DTMoney",
+      "description": "React.js, Typescript, Styled Components. Deployed on Vercel.",
+      "release_year": "2022",
+      "subject": "Frontend",
+      "image": "https://picsum.photos/200/300",
+      "link": "https://dtmoney-ignite-six.vercel.app/"
+   },
+   {
+      "title": "Pomodoro app clone",
+      "description": "Pomodoro app clone made with React.js. Github pages for deploy",
+      "release_year": "2022",
+      "subject": "Frontend",
+      "image": "https://picsum.photos/200/300",
+      "link": "https://murielpacheco.github.io/pomodoroapp-react/"
    }
 ]

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./styles.module.scss";
 
 interface PostProps {
@@ -6,12 +7,13 @@ interface PostProps {
    image: string;
    releaseYear: string;
    subject: string;
+   link: string;
 }
 
-export function WorkItem({image, title, description, releaseYear, subject}: PostProps) {
+export function WorkItem({image, title, description, releaseYear, subject, link}: PostProps) {
    return (
       <>
-      <div className={styles.workItem}>
+      <a href={link}className={styles.workItem}>
          <img src={image} alt="Image" />
          <div className={styles.workInfos}>
             <h2>{title}</h2>
@@ -21,7 +23,7 @@ export function WorkItem({image, title, description, releaseYear, subject}: Post
             </aside>
             <p className={styles.workDescription}>{description}</p>
          </div>
-      </div>
+      </a>
       </>
    )
 }
