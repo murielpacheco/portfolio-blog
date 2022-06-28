@@ -5,7 +5,6 @@ import { linkResolver, repositoryName } from '../services/prismic';
 import Link from 'next/link';
 
 import '../styles/globals.scss'
-import { Footer } from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

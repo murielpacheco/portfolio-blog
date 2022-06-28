@@ -12,7 +12,7 @@ export function IntroBio() {
                React, Next.js, Node.js, Express and Git.
             </span>
             <div className={styles.buttonWrapper}>
-               <Button pdfDownload={false} hrefContent="/curriculum_muriel_pacheco.pdf" content="Download Resume"/>
+               <Button pdfDownload={false} hrefContent="/curriculum_muriel_pacheco.pdf" content="See Resume"/>
                <Button pdfDownload={false} hrefContent="/projects" content="Projects"/>
             </div>
          </div>
