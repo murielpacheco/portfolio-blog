@@ -13,7 +13,6 @@ export function IntroBio() {
             </span>
             <div className={styles.buttonWrapper}>
                <Button pdfDownload={false} hrefContent="/curriculum_muriel_pacheco.pdf" content="See Resume"/>
-               <Button pdfDownload={false} hrefContent="/projects" content="Projects"/>
             </div>
          </div>
       </section>

@@ -4,7 +4,7 @@
       "description": "Website made with Next.js, Typescript and SASS",
       "release_year": "2022",
       "subject": "Frontend",
-      "image": "https://picsum.photos/200/300",
+      "image": "./blog.png",
       "link": "https://muriel-damazio.vercel.app/"
    },
    {
@@ -12,23 +12,15 @@
       "description": "Rentx API made with Node.js, Typescript, Express.js and PostgreSQL",
       "release_year": "2022",
       "subject": "Backend",
-      "image": "https://picsum.photos/200/300",
+      "image": "./rentx.png",
       "link": "https://github.com/murielpacheco/rentx-app-api"
    },
    {
-      "title": "DTMoney",
+      "title": "Spacey React",
       "description": "React.js, Typescript, Styled Components. Deployed on Vercel.",
       "release_year": "2022",
       "subject": "Frontend",
-      "image": "https://picsum.photos/200/300",
-      "link": "https://dtmoney-ignite-six.vercel.app/"
-   },
-   {
-      "title": "Pomodoro app clone",
-      "description": "Pomodoro app clone made with React.js. Github pages for deploy",
-      "release_year": "2022",
-      "subject": "Frontend",
-      "image": "https://picsum.photos/200/300",
-      "link": "https://murielpacheco.github.io/pomodoroapp-react/"
+      "image": "./spacey.png",
+      "link": "https://spacey-react.vercel.app//"
    }
 ]
