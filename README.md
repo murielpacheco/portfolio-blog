@@ -2,7 +2,7 @@
 
 Aplicação que serve como Portfolio pessoal, exibindo projetos desenvolvidos por mim, e como local para expor escritos sobre desenvolvimento web que irei organizar ao longo da minha carreira.
 
-Link para acesso: https://web.whatsapp.com/
+Link para acesso: https://muriel-damazio.vercel.app/
 
 ## Tecnologias usadas
 
