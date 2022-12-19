@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Button } from "../Button";
 import styles from "./styles.module.scss";
 
@@ -12,7 +11,8 @@ export function IntroBio() {
                React, Next.js, Node.js, Express and Git.
             </span>
             <div className={styles.buttonWrapper}>
-               <Button pdfDownload={false} hrefContent="/curriculum_muriel_pacheco.pdf" content="See Resume"/>
+               <Button pdfDownload={false} hrefContent="/curriculum_muriel_pacheco.pdf" content="Portuguese Resume"/>
+               <Button pdfDownload={false} hrefContent="/english_curriculum_muriel_pacheco.pdf" content="English Resume"/>
             </div>
          </div>
       </section>
