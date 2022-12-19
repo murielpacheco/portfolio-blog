@@ -4,9 +4,10 @@ import { PrismicProvider } from '@prismicio/react';
 import { linkResolver, repositoryName } from '../services/prismic';
 import Link from 'next/link';
 
-import '../styles/globals.scss'
 
+import '../styles/globals.scss'
 function MyApp({ Component, pageProps }: AppProps) {
+  
   return (
     <>
       <PrismicProvider

@@ -26,7 +26,7 @@ export function Footer() {
                <Image src="/linkedin.svg" alt="LinkedIn Icon" width="32" height="32" />
             </a>
          </div>
-         <span>Desenvolvido por Muriel Damazio Pacheco 💻</span>
+         <span>Developed by Muriel Damazio Pacheco 💻</span>
       </footer>
    )
 }
